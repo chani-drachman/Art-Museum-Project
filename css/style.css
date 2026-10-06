@@ -1,69 +1,89 @@
-/* ===== Step 2: Type Selectors ===== */
-
 h1 {
-  color: darkslateblue;
-  font-size: 40px;
+  font-size: 25px;
+  color: rgb(1, 1, 67);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+h2{
+  font-size: 20px;
+color: rgb(49, 49, 77);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-h2 {
-  color: teal;
-  font-size: 28px;
+}
+p{
+  font-size: 15px;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav a {
-  text-transform: uppercase;
-  font-weight: bold;
+  color: rgb(141, 1, 69);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 14;
+padding-left: 10px;
+font-weight: bold;
+text-transform: uppercase;
 }
-
 footer {
-  background-color: #333333;
-  color: white;
+  background-color:rgb(210, 210, 249) ;
+    color: rgb(141, 1, 69);
+    padding: 20px;
+    margin-top: 8px;
 }
-
-/* ===== Step 3: Class Selectors ===== */
-
-.artist-card {
-  border: 2px solid darkslateblue;
+.artistcard {
+  background-color:rgb(210, 210, 249) ;
+  border: solid rgb(141, 1, 69) 3px;
   border-radius: 10px;
-  background-color: lavender;
+  padding: 5px;
+  margin: 5px;
 }
-
+.artistcard img{
+  width: 300px;
+}
 .thumbnail {
-  border: 3px solid #333333;
-  border-radius: 8px;
+  border: solid rgb(141, 1, 69) 3px;
+border-radius: 4px;
+height: 150px;
+width: 150px;
+}
+#leonardo h2 {
+  color: brown;
+}
+#martin h2 {
+  color: purple
+}
+#yohan h2 {
+  color: green;
+}
+#welcomeP {
+  font-size: 18px;
 }
 
-/* ===== Step 4: Id Selectors ===== */
+.artistcard img{
+  width: 300px;
+}
+section a {
+font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-#vangogh h2 {
-  color: goldenrod;
+}
+footer h2 {
+  color: rgb(141, 1, 69);
 }
 
-#monet h2 {
-  color: cornflowerblue;
+
+.popup {
+    display: none;
 }
 
-#rembrandt h2 {
-  color: saddlebrown;
+.popup:target {
+    display: block;
 }
 
-#welcome-text {
-  font-size: 22px;
-}
 
-/* ===== Step 5: Parent + Child Selectors ===== */
 
-header nav a {
-  color: darkslateblue;
-}
 
-main article h2 {
-  font-size: 32px;
-}
+/* ===== Step 2: Type Selectors ===== */
 
-footer a {
-  color: white;
-}
+
 
 /* ===== Step 6: Specificity Check ===== */
 
@@ -76,9 +96,7 @@ footer a {
   so it wins no matter which rule comes first in the file.
 */
 
-.section-title {
-  color: crimson;
-}
+
 
 /*
   Specificity scores (id, class, type):
